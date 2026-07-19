@@ -24,7 +24,7 @@ public class Task6 {
             arr[i] = arr[smallest];
             arr[smallest] = swap;
 
-            // Рекурсивно применяем heapify к поддереву
+
             heapify(arr, n, smallest);
         }
     }
@@ -32,7 +32,6 @@ public class Task6 {
 
     public static void buildHeap(int[] arr) {
         int n = arr.length;
-        // Начинаем с последнего нелистового узла и идем вверх
         for (int i = n / 2 - 1; i >= 0; i--) {
             heapify(arr, n, i);
         }
